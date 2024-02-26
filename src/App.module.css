@@ -1,0 +1,169 @@
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/roboto-v30-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/roboto-v30-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to right,
+    rgba(31, 48, 64, 1) 50%,
+    rgba(255, 148, 66, 1) 50%
+  );
+  max-width: 1762px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+}
+.info_page {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  max-width: 1512px;
+  height: 882px;
+  margin: 83px 125px 0px 125px;
+  padding: 60px 80px 0px 80px;
+}
+.header_ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_ul ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  justify-content: end;
+}
+.header_ul li {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  cursor: pointer;
+}
+.header_ul li:hover {
+  color: rgb(121, 108, 108);
+}
+.rightPart img {
+  width: 427px;
+  height: 518px;
+}
+
+.content_part {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  margin-top: 116px;
+}
+.leftPart {
+  display: flex;
+  flex-direction: column;
+}
+.leftPart h3 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 90px;
+  color: black;
+  /* width: 762px; */
+}
+.leftPart p {
+  color: #6b6868;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 45px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 38px;
+  margin-top: 60px;
+}
+.buttons button:nth-child(1) {
+  width: 225px;
+  height: 84px;
+  border: 2px solid black;
+  background: #fff;
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
+.buttons button:nth-child(1):hover {
+  background: #f8efef;
+}
+.buttons button:nth-child(2) {
+  width: 378px;
+  height: 84px;
+  background: #000;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.buttons button:nth-child(2):hover {
+  background: #353535;
+}
+.darkLanguage {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.select {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #fff;
+  font-size: 16px;
+}
+.select:hover {
+  background: #f1efef;
+}
+.nightMode {
+  /* Add styles for night mode */
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+.nightModeToggle {
+  width: 100px;
+  height: 45px;
+  border-radius: 10px;
+  background: rgba(31, 48, 64, 1);
+  color: #fff;
+  border: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+.nightModeToggle {
+  background: #182633;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.nightModeToggle:hover {
+  background: rgb(66, 86, 105);
+}
